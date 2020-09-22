@@ -10,7 +10,7 @@
 
 内容是关于数据的配置，用户名，密码，ip地址，端口
 
-···
+```
 package cn.paakciu.config;
 public class dataBaseConfig {
     public static String driver = "com.mysql.jdbc.Driver";// MySql驱动名
@@ -19,4 +19,5 @@ public class dataBaseConfig {
     public static String ip = "xxx";//ip地址
     public static String port = "xxx";//端口
 }
-···
+```
+
