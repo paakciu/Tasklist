@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Beta</string>
+    <string name="test">
+        <Data><![CDATA[<font color="#e60012"> *</font><font color="#189dde">标题 : </font>]]></Data>
+    </string>
+    <string name="me_login_title">还没有登录，请点击登录</string>
+</resources>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.paakciu.view.postDetailedActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/post_d_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:ems="5"
+                android:text="主标题:"
+                app:layout_constraintEnd_toStartOf="@+id/post_d_et_title"
+                app:layout_constraintTop_toTopOf="@+id/post_d_et_title" />
+
+            <EditText
+                android:id="@+id/post_d_et_title"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/edit_background"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="主标题"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.722"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/post_d_tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="电话号码："
+                android:ems="5"
+                app:layout_constraintEnd_toStartOf="@+id/post_d_et_phone"
+                app:layout_constraintTop_toTopOf="@+id/post_d_et_phone" />
+            <TextView
+                android:id="@+id/post_d_tv_salary"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="工资范围："
+                android:ems="5"
+                app:layout_constraintEnd_toStartOf="@+id/post_d_et_salary"
+                app:layout_constraintTop_toTopOf="@+id/post_d_et_salary" />
+
+
+            <EditText
+                android:id="@+id/post_d_et_content"
+                android:layout_width="wrap_content"
+                android:layout_height="154dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/edit_background"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.722"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/post_d_et_title"
+                tools:text="详细内容框" />
+
+            <TextView
+                android:id="@+id/post_d_tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:ems="5"
+                android:text="详细内容："
+                app:layout_constraintEnd_toStartOf="@+id/post_d_et_content"
+                app:layout_constraintTop_toTopOf="@+id/post_d_et_content" />
+
+            <TextView
+                android:id="@+id/post_d_tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:ems="5"
+                android:text="邮箱："
+                app:layout_constraintEnd_toStartOf="@+id/post_d_et_email"
+                app:layout_constraintTop_toTopOf="@+id/post_d_et_email" />
+
+            <EditText
+                android:id="@+id/post_d_et_email"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/edit_background"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.722"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/post_d_et_content" />
+
+            <TextView
+                android:id="@+id/post_d_tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:ems="5"
+                android:text="公司地址："
+                app:layout_constraintEnd_toStartOf="@+id/post_d_et_address"
+                app:layout_constraintTop_toTopOf="@+id/post_d_et_address" />
+
+            <EditText
+                android:id="@+id/post_d_et_address"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/edit_background"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.722"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/post_d_et_email" />
+
+            <EditText
+                android:id="@+id/post_d_et_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/edit_background"
+                android:ems="10"
+                android:inputType="phone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.722"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/post_d_et_address" />
+
+            <EditText
+                android:id="@+id/post_d_et_salary"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/edit_background"
+                android:ems="10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.722"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/post_d_et_phone" />
+
+            <TextView
+                android:id="@+id/post_d_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:ems="5"
+                android:text="公司名称："
+                app:layout_constraintEnd_toStartOf="@+id/post_d_et_name"
+                app:layout_constraintTop_toTopOf="@+id/post_d_et_name" />
+
+            <EditText
+                android:id="@+id/post_d_et_name"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/edit_background"
+                android:ems="10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.722"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/post_d_et_salary" />
+
+            <TextView
+                android:id="@+id/post_d_tv_img"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="24dp"
+                android:ems="5"
+                android:text="营业执照："
+                app:layout_constraintStart_toStartOf="@+id/post_d_tv_name"
+                app:layout_constraintTop_toBottomOf="@+id/post_d_tv_name" />
+
+            <Button
+                android:id="@+id/btn_post_detailed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="确认发布"
+                app:layout_constraintEnd_toEndOf="@+id/post_d_et_name"
+                app:layout_constraintTop_toBottomOf="@+id/post_d_et_name" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_one"
+        android:icon="@drawable/up"
+        android:title="任务"/>
+
+    <item
+        android:id="@+id/tab_two"
+        android:icon="@drawable/down"
+        android:title="发布"/>
+
+    <item
+        android:id="@+id/tab_three"
+        android:icon="@drawable/left"
+        android:title="消息"/>
+
+    <item
+        android:id="@+id/tab_four"
+        android:icon="@drawable/right"
+        android:title="我的"/>
+</menu>
